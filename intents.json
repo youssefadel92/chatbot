@@ -1,0 +1,58 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "name",
+         "patterns": ["my name is @test"],
+         "responses": ["Hello @test"],
+         "context": [""]
+        },
+	{"tag": "delete",
+         "patterns": ["Hi there can i delete something from my order", "i need to delete from my order", "i want to delete from my order", "i want to delete something", "i want to delete this item", "i want to delete", "i need to delete something","delete","can i delete something from my order", "can i delete something", "delete from my order", "i need to delete an item from my monthly order", "delete this item from my order this month", "Hi there can i remove something from my order", "i need to remove from my order", "i want to remove from my order", "i want to remove something", "i want to remove this item", "i want to remove", "i need to remove something","remove","can i remove something from my order", "can i remove something", "remove from my order", "i need to remove an item from my monthly order", "remove this item from my order this month"],
+         "responses": ["Okay,can you provide me with the name of the item you want to add?", "tell me what item do you want to add?"],
+         "context": [""]
+        },
+	{"tag": "add",
+         "patterns": ["hi there please supply me with this object in my monthly order", "i need you to supply me with an item in my next order", "can you supply me with something","hi there please provide me with this object in my monthly order", "i need you to provide me with an item in my next order", "can you provide me with something", "Hi there can i add something to my order", "i need to add to my order", "i want to add to my order", "i want to add something", "i want to add this item", "i want to add", "i need to add something","add","can i add something to my order", "can i add something", "add to my order", "i need to add an item to my monthly order", "add this item to my order this month"],
+         "responses": ["Okay,can you provide me with the name of the item you want to add?", "tell me what item do you want to add?"],
+         "context": [""]
+        },
+	{"tag": "exchange",
+         "patterns": ["can i exchange an item in my monthly order", "i need to exchange something in my order this month","Hi there can i exchange something to my order", "i need to exchange to my order", "i want to exchange","i need to exchange something","exchange","can i exchange something to my order", "i want to exchange an item in my order", "i want to exchange item with another item", "i want to exchange this item with another one","can i exchange something", "exchange to my order"],
+         "responses": ["tell my the name of the item you want to exchange?", "what is the item you want to exchange?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        }
+   ]
+}
